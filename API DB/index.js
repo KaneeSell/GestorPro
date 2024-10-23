@@ -1,11 +1,12 @@
 const express = require('express');
 const Firebird = require('node-firebird');
+const path = require('path');
 
 //Config:
 const options = {
     host:'127.0.0.1',
     port: 3050,
-    database: 'C:\\Users\\kanee\\OneDrive\\Documentos\\GestorPro\\dados\\GP.FDB',
+    database: path.resolve(__dirname, '../dados/GP.FDB'),
     user: 'sysdba',
     password: 'masterkey',
     lowercase_keys: false,

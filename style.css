@@ -8,12 +8,12 @@ body{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-image: url(./imagens/background.jpeg);
+    background-image: url(./imagens/background.webp);
     background-repeat: no-repeat;
     background-position: center 0px;
     background-attachment: fixed;
     background-size: cover;
-    font-size: 30px;
+    font-size: 40px;
 }
 @media(max-width: 480px){
     body{
@@ -50,20 +50,19 @@ nav{
     padding: 5px 10px;
     margin: 3px 3px;
     text-decoration: none;
-    transform: scale(1);
-    transition: 0.3s;
     background-color: #34183aa2;
     color: white;
     text-shadow: 1px 1px 2px black;
+    transform: scale(1);
+    transition: 0.3s;
 }
 .navegador:hover{
     transform: scale(1.05);
     color: #34183ad5;
 }
 .navegador:active{
-    transform: scale(1);
-    transition: 0.1s;
-    color: rgb(164, 168, 110);
+    transition: 0s;
+    color: #a4a86e;
 }
 main{
     display: flex;
@@ -77,6 +76,36 @@ main{
     color: white;
     text-shadow: 1px 1px 2px black;
     text-align: center;
+}
+.button{
+    background-color: #34183aa2;
+    margin: 0px;
+    padding: 4px 3px;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.1s;
+}
+.navButton{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.button:hover{
+    background-color: #34183aa2;
+    color: #34183ad5;
+    transform: scale(1.05);
+}
+.button:active{
+    transition: 0s;
+    color: #a4a86e;
 }
 details,li{
     display: flex;
@@ -98,6 +127,7 @@ summary{
 }
 li:hover, summary:hover{
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 footer{
     background-color: rgba(240, 248, 255, 0.636);
