@@ -14,6 +14,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     font-size: 40px;
+    cursor: default;
 }
 @media(max-width: 480px){
     body{
@@ -43,6 +44,18 @@ nav{
     align-items: center;
     margin: 0px 0px;
     text-shadow: 1px 1px 2px black;
+}
+.navDesabled{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 3px 3px;
+    text-decoration: none;
+    background-color: #34183aa2;
+    color: rgba(255, 255, 255, 0.338);
+    text-shadow: 1px 1px 2px black;
+    pointer-events: none;
+    opacity: 70%;
 }
 .navegador{
     border: 1px solid black;
@@ -77,18 +90,6 @@ main{
     text-shadow: 1px 1px 2px black;
     text-align: center;
 }
-.button{
-    background-color: #34183aa2;
-    margin: 0px;
-    padding: 4px 3px;
-    border: 2px solid black;
-    border-radius: 15px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    cursor: pointer;
-    transform: scale(1);
-    transition: 0.1s;
-}
 .navButton{
     margin: 0px;
     padding: 0px;
@@ -96,7 +97,34 @@ main{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
+}
+.btnDesabled{
+    background-color: #34183aa2;
+    margin: 0px;
+    padding: 4px 3px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: gray;
+    text-shadow: 1px 1px 1px black;
+    transform: scale(1);
+    transition: 0.1s;
+    pointer-events: none;
+    opacity: 40%;
+}
+.button{
+    background-color: #34183aa2;
+    margin: 0px;
+    padding: 4px 3px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.1s;
 }
 .button:hover{
     background-color: #34183aa2;
