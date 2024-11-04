@@ -13,7 +13,7 @@ body{
     background-position: center 0px;
     background-attachment: fixed;
     background-size: cover;
-    font-size: 35px;
+    font-size: 30px;
     cursor: default;
 }
 @media(max-width: 480px){
